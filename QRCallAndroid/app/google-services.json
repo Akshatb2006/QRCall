@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144466042486",
+    "project_id": "qrcall-d840b",
+    "storage_bucket": "qrcall-d840b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144466042486:android:d97e912e32e203a289c957",
+        "android_client_info": {
+          "package_name": "com.example.qrcall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVlpvwD343YO1oU-8iaoQ2Vp9k3v91KR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

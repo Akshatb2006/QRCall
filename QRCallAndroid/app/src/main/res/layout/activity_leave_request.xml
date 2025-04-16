@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/leave_request_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Request"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/from_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="From Date"
+        android:inputType="none"
+        android:background="@drawable/border_file"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/leave_request_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/to_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="To Date"
+        android:inputType="none"
+        android:background="@drawable/border_file"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/from_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/leave_reason"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Leave Reason"
+        android:inputType="textMultiLine"
+        android:background="@drawable/border_file"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/to_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/attach_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Attach File"
+        android:background="@drawable/border_file"
+        android:padding="12dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/leave_reason"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No file selected"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/attach_file"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/submit_leave_request"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Submit Leave Request"
+        android:backgroundTint="@color/teal"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_file_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_stats"
+        android:icon="@drawable/ic_stats"
+        android:title="Stats" />
+
+    <item
+        android:id="@+id/nav_qr"
+        android:icon="@drawable/ic_qr"
+        android:title="QR Scanner" />
+
+    <item
+        android:id="@+id/nav_leave"
+        android:icon="@drawable/ic_leave"
+        android:title="Leave Request" />
+
+</menu>
