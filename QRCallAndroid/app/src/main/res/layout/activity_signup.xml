@@ -45,42 +45,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"/>
-
-    <EditText
-        android:id="@+id/signup1_password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textSize="20dp"
-        android:inputType="textPassword"
-        android:background="@drawable/border_file"
-        app:layout_constraintTop_toBottomOf="@id/signup_email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
-
     <EditText
         android:id="@+id/signup_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Confirm Password"
+        android:hint="Password"
         android:textSize="20dp"
         android:background="@drawable/border_file"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/signup1_password"
+        app:layout_constraintTop_toBottomOf="@id/signup_email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"/>
-
-    <Spinner
-        android:id="@+id/spinner_role"
-        android:layout_width="0dp"
-        android:layout_height="52dp"
-        android:background="@drawable/border_file"
-        app:layout_constraintTop_toBottomOf="@id/signup_password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/btn_signup"
@@ -89,7 +65,7 @@
         android:text="Sign Up"
         android:backgroundTint="@color/teal"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/spinner_role"
+        app:layout_constraintTop_toBottomOf="@id/signup_password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
